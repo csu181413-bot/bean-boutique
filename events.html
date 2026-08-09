@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for coffee tastings, brewing classes, and meet-the-roaster events at Bean Boutique.">
+  <title>Events &amp; Workshops | Bean Boutique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bb-navbar sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-seedling"></i> Bean Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navCoffee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coffee</a>
+            <ul class="dropdown-menu" aria-labelledby="navCoffee">
+              <li><a class="dropdown-item" href="classics.html">Classics</a></li>
+              <li><a class="dropdown-item" href="pastries-snacks.html">Pastries &amp; Snacks</a></li>
+              <li><a class="dropdown-item" href="cool-story.html">Cool Story</a></li>
+              <li><a class="dropdown-item" href="best-selections.html">Best Selections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
+            <ul class="dropdown-menu" aria-labelledby="navEquipment">
+              <li><a class="dropdown-item" href="immersion-brewers.html">Immersion Brewers</a></li>
+              <li><a class="dropdown-item" href="electric-machines.html">Electric Machines</a></li>
+              <li><a class="dropdown-item" href="essentials.html">Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link">Offers</a></li>
+        </ul>
+        <form class="nav-search-form" action="search.html" method="get" role="search">
+          <div class="input-group input-group-sm">
+            <input type="search" class="form-control" name="q" placeholder="Search coffees &amp; equipment…" aria-label="Search products" list="global-product-list">
+            <button class="btn btn-primary" type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <datalist id="global-product-list">
+          <option value="Morning Glory Blend"><option value="Ethiopian Yirgacheffe"><option value="Pro Espresso Machine">
+        </datalist>
+        <ul class="navbar-nav navbar-icons align-items-lg-center">
+          <li class="nav-item"><a href="cart.html" class="nav-link cart-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link profile-link" aria-label="Account"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Events &amp; Workshops</h1>
+      <p>Join our community for tastings, brewing classes, and special gatherings at the roastery.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="events-grid">
+        <article class="event-card">
+          <div class="event-date">
+            <div class="day">21</div>
+            <div class="month-year">MAY 2026</div>
+          </div>
+          <div class="event-body">
+            <h3>Coffee Cupping Workshop</h3>
+            <p>Learn professional cupping techniques and develop your palate with our head roaster. Taste 6 single-origin coffees side by side.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 10:00 AM – 12:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Roastery Tasting Room</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <div class="day">27</div>
+            <div class="month-year">MAY 2026</div>
+          </div>
+          <div class="event-body">
+            <h3>Pour-Over Masterclass</h3>
+            <p>Hands-on class covering V60, Chemex, and Kalita Wave techniques. Take home a bag of our featured single origin.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 2:00 PM – 4:30 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Brew Lab</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <div class="day">15</div>
+            <div class="month-year">JUN 2026</div>
+          </div>
+          <div class="event-body">
+            <h3>Meet the Roaster</h3>
+            <p>An intimate evening with our founder. Hear the story behind Bean Boutique, tour the roastery, and enjoy fresh samples.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 6:00 PM – 8:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Main Roastery</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <div class="day">21</div>
+            <div class="month-year">JUL 2026</div>
+          </div>
+          <div class="event-body">
+            <h3>Latte Art Throwdown</h3>
+            <p>Watch baristas compete or sign up to show your skills! Open to all levels with prizes for top pours.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 11:00 AM – 2:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Café Floor</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <div class="day">31</div>
+            <div class="month-year">AUG 2026</div>
+          </div>
+          <div class="event-body">
+            <h3>Bountiful Berry</h3>
+            <p>It is time to celebrate the bounty of berries with our newest selection for berry-grounded special beans!</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 1:00 PM – 3:30 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Brew Lab</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-date">
+            <div class="day">09</div>
+            <div class="month-year">SEP 2026</div>
+          </div>
+          <div class="event-body">
+            <h3>Seasonal Blend Launch Party</h3>
+            <p>Celebrate our new spring blend with live music, complimentary tastings, and exclusive launch-day discounts.</p>
+            <div class="event-meta">
+              <span><i class="fas fa-clock"></i> 5:00 PM – 9:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Full Venue</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Registration Form -->
+      <div class="registration-section">
+        <div class="section-header">
+          <h2>Register for an Event</h2>
+          <p>Fill in your details below and we'll confirm your spot via email.</p>
+        </div>
+        <form action="mailto:events@beanboutique.com" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="First Name" required placeholder="Jane">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="Last Name" required placeholder="Smith">
+            </div>
+            <div class="form-group full-width">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="Email" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group full-width">
+              <label for="event-select">Select Event</label>
+              <select id="event-select" name="Event" required>
+                <option value="">Choose an event...</option>
+                <option value="Coffee Cupping Workshop - May 21">Coffee Cupping Workshop — May 21</option>
+                <option value="Pour-Over Masterclass - May 27">Pour-Over Masterclass — May 27</option>
+                <option value="Meet the Roaster - Jun 15">Meet the Roaster — Jun 15</option>
+                <option value="Latte Art Throwdown - Jul 21">Latte Art Throwdown — July 21</option>
+                <option value="Bountiful Berry - Aug 31">Bountiful Berry — Aug 31</option>
+                <option value="Seasonal Blend Launch - Sep 9">Seasonal Blend Launch — Sep 9</option>
+              </select>
+            </div>
+          </div>
+          <div class="security-badge">
+            <i class="fas fa-shield-alt"></i> Your information is transmitted securely via encrypted email
+          </div>
+          <button type="submit" class="btn btn-primary">Register Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map Widget -->
+  <section class="bg-cream-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Find Us</span>
+        <h2>Visit the Roastery</h2>
+        <p>Kan Nar Street, Hpa-An</p>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5140.596919866966!2d97.63087112196101!3d16.882388203167977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2ced21dccdda7%3A0x304af8c857fd4848!2sHpa-An!5e0!3m2!1sen!2smm!4v1785659358276!5m2!1sen!2smm"
+          allowfullscreen=""
+          loading="lazy"
+          width="600"
+          height="450"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Bean Boutique location map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4><i class="fas fa-seedling"></i> Bean Boutique</h4>
+          <p>Artisan coffee, curated equipment, and a warm community since 2014.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="classics.html">Coffee Selection</a></li>
+            <li><a href="immersion-brewers.html">Brewing Equipment</a></li>
+            <li><a href="events.html">Events &amp; Workshops</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>42 Roastery Lane, Portland, OR 97201</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>events@beanboutique.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Bean Boutique's unique coffee blends and single-origin selections with tasting notes and brewing recommendations.">
+  <title>Coffee Selection | Bean Boutique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bb-navbar sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-seedling"></i> Bean Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navCoffee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coffee</a>
+            <ul class="dropdown-menu" aria-labelledby="navCoffee">
+              <li><a class="dropdown-item" href="classics.html">Classics</a></li>
+              <li><a class="dropdown-item" href="pastries-snacks.html">Pastries &amp; Snacks</a></li>
+              <li><a class="dropdown-item" href="cool-story.html">Cool Story</a></li>
+              <li><a class="dropdown-item" href="best-selections.html">Best Selections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
+            <ul class="dropdown-menu" aria-labelledby="navEquipment">
+              <li><a class="dropdown-item" href="immersion-brewers.html">Immersion Brewers</a></li>
+              <li><a class="dropdown-item" href="electric-machines.html">Electric Machines</a></li>
+              <li><a class="dropdown-item" href="essentials.html">Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link">Offers</a></li>
+        </ul>
+        <form class="nav-search-form" action="search.html" method="get" role="search">
+          <div class="input-group input-group-sm">
+            <input type="search" class="form-control" name="q" placeholder="Search coffees &amp; equipment…" aria-label="Search products" list="global-product-list">
+            <button class="btn btn-primary" type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <datalist id="global-product-list">
+          <option value="Morning Glory Blend"><option value="Ethiopian Yirgacheffe"><option value="Colombian Supremo">
+        </datalist>
+        <ul class="navbar-nav navbar-icons align-items-lg-center">
+          <li class="nav-item"><a href="cart.html" class="nav-link cart-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link profile-link" aria-label="Account"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Our Coffee Selection</h1>
+      <p>Unique blends and single-origin coffees, each with distinct character and carefully crafted tasting profiles.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <!-- CSS-only category filter -->
+      <div class="catalog-filter">
+        <input type="radio" name="coffee-filter" id="filter-all" checked>
+        <input type="radio" name="coffee-filter" id="filter-blend">
+        <input type="radio" name="coffee-filter" id="filter-single">
+        <input type="radio" name="coffee-filter" id="filter-dark">
+        <input type="radio" name="coffee-filter" id="filter-decaf">
+
+        <div class="filter-buttons">
+          <label for="filter-all">All</label>
+          <label for="filter-blend">Blends</label>
+          <label for="filter-single">Single Origin</label>
+          <label for="filter-dark">Dark Roast</label>
+          <label for="filter-decaf">Decaf</label>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="product-card" data-filter="blend">
+            <div class="product-image">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal1">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morning Glory Blend">
+              </a>
+              <span class="product-badge">Best Seller</span>
+            </div>
+            <div class="product-body">
+              <h3>Morning Glory Blend</h3>
+              <div class="product-meta">
+                <span class="tag">Blend</span>
+                <span class="tag">Medium Roast</span>
+              </div>
+              <p>A balanced everyday blend combining beans from Brazil and Colombia for a smooth, approachable cup.</p>
+              <div class="tasting-notes"><strong>Tasting Notes:</strong> Caramel, citrus zest, milk chocolate</div>
+              <p><strong>Brew:</strong> Drip, pour-over, or French press</p>
+              <div class="product-footer">
+                <span class="price">$16.99</span>
+                <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-filter="single">
+            <div class="product-image">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal2">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="Ethiopian Yirgacheffe">
+              </a>
+              <span class="product-badge">Single Origin</span>
+            </div>
+            <div class="product-body">
+              <h3>Ethiopian Yirgacheffe</h3>
+              <div class="product-meta">
+                <span class="tag">Single Origin</span>
+                <span class="tag">Light Roast</span>
+              </div>
+              <p>Washed process beans from the birthplace of coffee, celebrated for their bright, tea-like clarity.</p>
+              <div class="tasting-notes"><strong>Tasting Notes:</strong> Jasmine, bergamot, lemon, honey</div>
+              <p><strong>Brew:</strong> Pour-over or Chemex for best clarity</p>
+              <div class="product-footer">
+                <span class="price">$19.99</span>
+                <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-filter="single dark">
+            <div class="product-image">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal3">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" alt="Colombian Supremo">
+              </a>
+            </div>
+            <div class="product-body">
+              <h3>Colombian Supremo</h3>
+              <div class="product-meta">
+                <span class="tag">Single Origin</span>
+                <span class="tag">Dark Roast</span>
+              </div>
+              <p>Rich and full-bodied from the Huila region, perfect for those who love a bold, comforting cup.</p>
+              <div class="tasting-notes"><strong>Tasting Notes:</strong> Dark chocolate, toasted nuts, brown sugar</div>
+              <p><strong>Brew:</strong> Espresso, Moka pot, or French press</p>
+              <div class="product-footer">
+                <span class="price">$17.99</span>
+                <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-filter="blend dark">
+            <div class="product-image">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal4">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Midnight Ember dark roast">
+              </a>
+              <span class="product-badge">Dark Roast</span>
+            </div>
+            <div class="product-body">
+              <h3>Midnight Ember</h3>
+              <div class="product-meta">
+                <span class="tag">Blend</span>
+                <span class="tag">Dark Roast</span>
+              </div>
+              <p>A bold, smoky blend crafted for late-night sessions and espresso lovers who crave intensity.</p>
+              <div class="tasting-notes"><strong>Tasting Notes:</strong> Smoky, dark cocoa, molasses</div>
+              <p><strong>Brew:</strong> Espresso machine or Aeropress</p>
+              <div class="product-footer">
+                <span class="price">$18.49</span>
+                <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-filter="single">
+            <div class="product-image">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal5">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Kenyan AA coffee">
+              </a>
+              <span class="product-badge">Limited</span>
+            </div>
+            <div class="product-body">
+              <h3>Kenyan AA</h3>
+              <div class="product-meta">
+                <span class="tag">Single Origin</span>
+                <span class="tag">Medium Roast</span>
+              </div>
+              <p>Grade AA beans from Nyeri with exceptional brightness and a wine-like complexity.</p>
+              <div class="tasting-notes"><strong>Tasting Notes:</strong> Blackcurrant, grapefruit, tomato sweetness</div>
+              <p><strong>Brew:</strong> V60 pour-over or siphon</p>
+              <div class="product-footer">
+                <span class="price">$21.99</span>
+                <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-filter="decaf">
+            <div class="product-image">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imgModal6">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Swiss Water Decaf">
+              </a>
+              <span class="product-badge">Decaf</span>
+            </div>
+            <div class="product-body">
+              <h3>Swiss Water Decaf</h3>
+              <div class="product-meta">
+                <span class="tag">Decaf</span>
+                <span class="tag">Medium Roast</span>
+              </div>
+              <p>100% chemical-free decaffeination preserving full flavour — proof that decaf can be delicious.</p>
+              <div class="tasting-notes"><strong>Tasting Notes:</strong> Almond, apple, gentle sweetness</div>
+              <p><strong>Brew:</strong> Any method — especially good as pour-over</p>
+              <div class="product-footer">
+                <span class="price">$17.49</span>
+                <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Image Modals -->
+  <div class="modal fade image-modal" id="imgModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Morning Glory Blend</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morning Glory Blend"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade image-modal" id="imgModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Ethiopian Yirgacheffe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&q=80" alt="Ethiopian Yirgacheffe"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade image-modal" id="imgModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Colombian Supremo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&q=80" alt="Colombian Supremo"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade image-modal" id="imgModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Midnight Ember</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Midnight Ember"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade image-modal" id="imgModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Kenyan AA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80" alt="Kenyan AA"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade image-modal" id="imgModal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Swiss Water Decaf</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80" alt="Swiss Water Decaf"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4><i class="fas fa-seedling"></i> Bean Boutique</h4>
+          <p>Artisan coffee, curated equipment, and a warm community since 2014.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="classics.html">Coffee Selection</a></li>
+            <li><a href="immersion-brewers.html">Brewing Equipment</a></li>
+            <li><a href="events.html">Events &amp; Workshops</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>42 Roastery Lane, Portland, OR 97201</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>hello@beanboutique.com</p>
+          <div class="security-badge"><i class="fas fa-lock"></i> Secure browsing — your data is protected</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 start-0 p-3">
+    <div id="cookieToast" class="toast cookie-toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-body">
+        <p><i class="fas fa-shield-alt"></i> We use cookies to protect your data and improve your experience.</p>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="toast">Accept</button>
+          <button type="button" class="btn btn-outline btn-sm" data-bs-dismiss="toast">Decline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

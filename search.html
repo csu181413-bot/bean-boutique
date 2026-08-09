@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search Bean Boutique for coffees, equipment, pastries and more.">
+  <title>Search | Bean Boutique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bb-navbar sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-seedling"></i> Bean Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navCoffee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coffee</a>
+            <ul class="dropdown-menu" aria-labelledby="navCoffee">
+              <li><a class="dropdown-item" href="classics.html">Classics</a></li>
+              <li><a class="dropdown-item" href="pastries-snacks.html">Pastries &amp; Snacks</a></li>
+              <li><a class="dropdown-item" href="cool-story.html">Cool Story</a></li>
+              <li><a class="dropdown-item" href="best-selections.html">Best Selections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
+            <ul class="dropdown-menu" aria-labelledby="navEquipment">
+              <li><a class="dropdown-item" href="immersion-brewers.html">Immersion Brewers</a></li>
+              <li><a class="dropdown-item" href="electric-machines.html">Electric Machines</a></li>
+              <li><a class="dropdown-item" href="essentials.html">Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link">Offers</a></li>
+        </ul>
+        <form class="nav-search-form" action="search.html" method="get" role="search">
+          <div class="input-group input-group-sm">
+            <input type="search" class="form-control" name="q" placeholder="Search coffees &amp; equipment…" aria-label="Search products" list="global-product-list">
+            <button class="btn btn-primary" type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <datalist id="global-product-list">
+          <option value="Morning Glory Blend"><option value="Ethiopian Yirgacheffe"><option value="Colombian Supremo">
+          <option value="Midnight Ember"><option value="Kenyan AA"><option value="Swiss Water Decaf">
+          <option value="Pro Espresso Machine"><option value="Classic French Press"><option value="Burr Grinder Pro">
+          <option value="Pour-Over Starter Set"><option value="AeroPress Go"><option value="Moka Pot Classic">
+          <option value="Almond Croissant"><option value="Chocolate Brownie"><option value="Origin Story Blend">
+        </datalist>
+        <ul class="navbar-nav navbar-icons align-items-lg-center">
+          <li class="nav-item"><a href="cart.html" class="nav-link cart-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link profile-link" aria-label="Account"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="search-hero">
+    <div class="container">
+      <h1><i class="fas fa-search"></i> Search Products</h1>
+      <p>Browse our full catalog of coffees and brewing equipment. Click any item below to jump to it.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="search-tags">
+        <a href="classics.html" class="search-tag">Classics</a>
+        <a href="pastries-snacks.html" class="search-tag">Pastries</a>
+        <a href="best-selections.html" class="search-tag">Best Selections</a>
+        <a href="immersion-brewers.html" class="search-tag">Immersion Brewers</a>
+        <a href="electric-machines.html" class="search-tag">Electric Machines</a>
+        <a href="essentials.html" class="search-tag">Essentials</a>
+      </div>
+
+      <div class="search-result-links">
+        <a href="#morning-glory">Morning Glory Blend</a>
+        <a href="#ethiopian">Ethiopian Yirgacheffe</a>
+        <a href="#colombian">Colombian Supremo</a>
+        <a href="#midnight-ember">Midnight Ember</a>
+        <a href="#kenyan">Kenyan AA</a>
+        <a href="#decaf">Swiss Water Decaf</a>
+        <a href="#espresso-machine">Pro Espresso Machine</a>
+        <a href="#french-press">Classic French Press</a>
+        <a href="#grinder">Burr Grinder Pro</a>
+        <a href="#pour-over">Pour-Over Starter Set</a>
+        <a href="#aeropress">AeroPress Go</a>
+        <a href="#moka-pot">Moka Pot Classic</a>
+        <a href="#croissant">Almond Croissant</a>
+        <a href="#brownie">Chocolate Brownie</a>
+        <a href="#origin-story">Origin Story Blend</a>
+      </div>
+
+      <div class="catalog-filter">
+        <input type="radio" name="search-filter" id="filter-all" checked>
+        <input type="radio" name="search-filter" id="filter-coffee">
+        <input type="radio" name="search-filter" id="filter-equipment">
+
+        <div class="filter-buttons">
+          <label for="filter-all">All Items</label>
+          <label for="filter-coffee">Coffee &amp; Food</label>
+          <label for="filter-equipment">Equipment</label>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="product-card" id="morning-glory" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Morning Glory Blend"></div>
+            <div class="product-body"><h3>Morning Glory Blend</h3><p>Coffee — Classics</p><div class="product-footer"><span class="price">$16.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="ethiopian" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="Ethiopian Yirgacheffe"></div>
+            <div class="product-body"><h3>Ethiopian Yirgacheffe</h3><p>Coffee — Best Selections</p><div class="product-footer"><span class="price">$19.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="colombian" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" alt="Colombian Supremo"></div>
+            <div class="product-body"><h3>Colombian Supremo</h3><p>Coffee — Classics</p><div class="product-footer"><span class="price">$17.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="midnight-ember" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Midnight Ember"></div>
+            <div class="product-body"><h3>Midnight Ember</h3><p>Coffee — Classics</p><div class="product-footer"><span class="price">$18.49</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="kenyan" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Kenyan AA"></div>
+            <div class="product-body"><h3>Kenyan AA</h3><p>Coffee — Best Selections</p><div class="product-footer"><span class="price">$21.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="decaf" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Swiss Water Decaf"></div>
+            <div class="product-body"><h3>Swiss Water Decaf</h3><p>Coffee — Classics</p><div class="product-footer"><span class="price">$17.49</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="croissant" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Almond Croissant"></div>
+            <div class="product-body"><h3>Almond Croissant</h3><p>Pastries &amp; Snacks</p><div class="product-footer"><span class="price">$4.50</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="brownie" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1607920591413-3cdc6aee3a1f?w=600&q=80" alt="Chocolate Brownie"></div>
+            <div class="product-body"><h3>Chocolate Brownie</h3><p>Pastries &amp; Snacks</p><div class="product-footer"><span class="price">$3.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="origin-story" data-type="coffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="Origin Story Blend"></div>
+            <div class="product-body"><h3>Origin Story Blend</h3><p>Coffee — Cool Story</p><div class="product-footer"><span class="price">$22.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="espresso-machine" data-type="equipment">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=600&q=80" alt="Pro Espresso Machine"></div>
+            <div class="product-body"><h3>Pro Espresso Machine</h3><p>Equipment — Electric Machines</p><div class="product-footer"><span class="price">$899.00</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="french-press" data-type="equipment">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" alt="Classic French Press"></div>
+            <div class="product-body"><h3>Classic French Press</h3><p>Equipment — Immersion Brewers</p><div class="product-footer"><span class="price">$34.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="grinder" data-type="equipment">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Burr Grinder Pro"></div>
+            <div class="product-body"><h3>Burr Grinder Pro</h3><p>Equipment — Essentials</p><div class="product-footer"><span class="price">$149.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="pour-over" data-type="equipment">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Pour-Over Starter Set"></div>
+            <div class="product-body"><h3>Pour-Over Starter Set</h3><p>Equipment — Essentials</p><div class="product-footer"><span class="price">$79.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="aeropress" data-type="equipment">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600&q=80" alt="AeroPress Go"></div>
+            <div class="product-body"><h3>AeroPress Go</h3><p>Equipment — Immersion Brewers</p><div class="product-footer"><span class="price">$39.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+          <article class="product-card" id="moka-pot" data-type="equipment">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Moka Pot Classic"></div>
+            <div class="product-body"><h3>Moka Pot Classic</h3><p>Equipment — Immersion Brewers</p><div class="product-footer"><span class="price">$29.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Bean Boutique — our story, values, and the team behind your favourite coffee.">
+  <title>About Us | Bean Boutique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bb-navbar sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-seedling"></i> Bean Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navCoffee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coffee</a>
+            <ul class="dropdown-menu" aria-labelledby="navCoffee">
+              <li><a class="dropdown-item" href="classics.html">Classics</a></li>
+              <li><a class="dropdown-item" href="pastries-snacks.html">Pastries &amp; Snacks</a></li>
+              <li><a class="dropdown-item" href="cool-story.html">Cool Story</a></li>
+              <li><a class="dropdown-item" href="best-selections.html">Best Selections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
+            <ul class="dropdown-menu" aria-labelledby="navEquipment">
+              <li><a class="dropdown-item" href="immersion-brewers.html">Immersion Brewers</a></li>
+              <li><a class="dropdown-item" href="electric-machines.html">Electric Machines</a></li>
+              <li><a class="dropdown-item" href="essentials.html">Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link">Offers</a></li>
+        </ul>
+        <form class="nav-search-form" action="search.html" method="get" role="search">
+          <div class="input-group input-group-sm">
+            <input type="search" class="form-control" name="q" placeholder="Search coffees &amp; equipment…" aria-label="Search products" list="global-product-list">
+            <button class="btn btn-primary" type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <datalist id="global-product-list">
+          <option value="Morning Glory Blend"><option value="Ethiopian Yirgacheffe"><option value="Colombian Supremo">
+          <option value="Midnight Ember"><option value="Kenyan AA"><option value="Swiss Water Decaf">
+          <option value="Pro Espresso Machine"><option value="Classic French Press"><option value="Burr Grinder Pro">
+          <option value="Pour-Over Starter Set"><option value="AeroPress Go"><option value="Moka Pot Classic">
+          <option value="Almond Croissant"><option value="Chocolate Brownie"><option value="Origin Story Blend">
+        </datalist>
+        <ul class="navbar-nav navbar-icons align-items-lg-center">
+          <li class="nav-item"><a href="cart.html" class="nav-link cart-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link profile-link" aria-label="Account"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="about-hero">
+    <div class="container">
+      <span class="section-label">Our Story</span>
+      <h1>About Bean Boutique</h1>
+      <p>Since 2014, we've been roasting exceptional coffee and building a community that celebrates craft, connection, and the perfect cup.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <span class="section-label">Who We Are</span>
+          <h2>More Than a Coffee Shop</h2>
+          <p>Bean Boutique began as a small roastery on Roastery Lane with a simple belief: great coffee brings people together. What started as a neighbourhood café has grown into a destination for artisan roasts, curated brewing equipment, and hands-on workshops.</p>
+          <p>Every bean we roast is ethically sourced through direct-trade relationships with farmers in Ethiopia, Colombia, Guatemala, and Kenya. We roast in small batches weekly to ensure peak freshness and flavour.</p>
+          <a href="classics.html" class="btn btn-primary mt-2">Explore Our Coffee</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=800&q=80" alt="Inside the Bean Boutique café">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-cream-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Stand For</span>
+        <h2>Our Values</h2>
+      </div>
+      <div class="about-values">
+        <div class="about-value-card">
+          <i class="fas fa-leaf"></i>
+          <h3>Sustainability</h3>
+          <p>Direct-trade sourcing and compostable packaging in every order.</p>
+        </div>
+        <div class="about-value-card">
+          <i class="fas fa-fire"></i>
+          <h3>Craft</h3>
+          <p>Small-batch roasting with precision and care, every single week.</p>
+        </div>
+        <div class="about-value-card">
+          <i class="fas fa-users"></i>
+          <h3>Community</h3>
+          <p>Workshops, tastings, and events that welcome all coffee lovers.</p>
+        </div>
+        <div class="about-value-card">
+          <i class="fas fa-heart"></i>
+          <h3>Quality</h3>
+          <p>From bean selection to the final pour, we never compromise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The People</span>
+        <h2>Meet Our Team</h2>
+      </div>
+      <div class="team-grid">
+        <article class="team-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Marcus Chen, Founder">
+          <div class="team-card-body">
+            <h3>Marcus Chen</h3>
+            <span>Founder &amp; Head Roaster</span>
+            <p class="mt-2">15 years of roasting experience across Portland and Melbourne.</p>
+          </div>
+        </article>
+        <article class="team-card">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Elena Vasquez, Brew Director">
+          <div class="team-card-body">
+            <h3>Elena Vasquez</h3>
+            <span>Brew Director</span>
+            <p class="mt-2">Certified Q Grader and pour-over competition judge.</p>
+          </div>
+        </article>
+        <article class="team-card">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="James Okonkwo, Community Lead">
+          <div class="team-card-body">
+            <h3>James Okonkwo</h3>
+            <span>Community Lead</span>
+            <p class="mt-2">Organises our workshops, events, and farmer meet-ups.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-cream-dark">
+    <div class="container text-center">
+      <h2>Visit Us Today</h2>
+      <p class="mb-3">42 Roastery Lane, Portland, OR 97201 &mdash; Mon–Sat 7am–7pm, Sun 8am–5pm</p>
+      <a href="events.html" class="btn btn-primary me-2">Upcoming Events</a>
+      <a href="register.html" class="btn btn-secondary">Join Our Community</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4><i class="fas fa-seedling"></i> Bean Boutique</h4>
+          <p>Artisan coffee, curated equipment, and a warm community since 2014.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="classics.html">Coffee</a></li>
+            <li><a href="immersion-brewers.html">Equipment</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="offers.html">Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>42 Roastery Lane, Portland, OR 97201</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>hello@beanboutique.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

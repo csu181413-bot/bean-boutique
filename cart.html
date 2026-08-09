@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Bean Boutique shopping cart — review items and proceed to checkout.">
+  <title>Shopping Cart | Bean Boutique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bb-navbar sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-seedling"></i> Bean Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navCoffee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coffee</a>
+            <ul class="dropdown-menu" aria-labelledby="navCoffee">
+              <li><a class="dropdown-item" href="classics.html">Classics</a></li>
+              <li><a class="dropdown-item" href="pastries-snacks.html">Pastries &amp; Snacks</a></li>
+              <li><a class="dropdown-item" href="cool-story.html">Cool Story</a></li>
+              <li><a class="dropdown-item" href="best-selections.html">Best Selections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
+            <ul class="dropdown-menu" aria-labelledby="navEquipment">
+              <li><a class="dropdown-item" href="immersion-brewers.html">Immersion Brewers</a></li>
+              <li><a class="dropdown-item" href="electric-machines.html">Electric Machines</a></li>
+              <li><a class="dropdown-item" href="essentials.html">Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link">Offers</a></li>
+        </ul>
+        <form class="nav-search-form" action="search.html" method="get" role="search">
+          <div class="input-group input-group-sm">
+            <input type="search" class="form-control" name="q" placeholder="Search coffees &amp; equipment…" aria-label="Search products" list="global-product-list">
+            <button class="btn btn-primary" type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <datalist id="global-product-list">
+          <option value="Morning Glory Blend"><option value="Ethiopian Yirgacheffe"><option value="Colombian Supremo">
+          <option value="Pro Espresso Machine"><option value="Classic French Press"><option value="Burr Grinder Pro">
+        </datalist>
+        <ul class="navbar-nav navbar-icons align-items-lg-center">
+          <li class="nav-item"><a href="cart.html" class="nav-link active cart-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link profile-link" aria-label="Account"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Your Shopping Cart</h1>
+      <p>Review your selections. To place an order, call us or visit in-store.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container cart-layout">
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlfGVufDB8fDB8fHww" alt="Morning Glory Blend">
+          <div class="cart-item-info">
+            <h4>Morning Glory Blend</h4>
+            <span class="price">$16.99</span>
+          </div>
+          <div class="cart-item-actions">
+            <span class="qty-display">Qty: 1</span>
+            <a href="classics.html" class="btn btn-secondary btn-sm">Remove</a>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=200&q=80" alt="Classic French Press">
+          <div class="cart-item-info">
+            <h4>Classic French Press</h4>
+            <span class="price">$34.99</span>
+          </div>
+          <div class="cart-item-actions">
+            <span class="qty-display">Qty: 1</span>
+            <a href="immersion-brewers.html" class="btn btn-secondary btn-sm">Remove</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="cart-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span>$51.98</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span>$5.99</span>
+        </div>
+        <div class="summary-row">
+          <span>Free shipping over $50</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span>$57.97</span>
+        </div>
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#checkoutModal">Proceed to Checkout</button>
+        <div class="security-badge">
+          <i class="fas fa-lock"></i> Secure checkout — your payment data is encrypted
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bg-cream-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>You Might Also Like</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlfGVufDB8fDB8fHww" alt="Morning Glory Blend">
+          <div class="feature-card-body">
+            <h3>Morning Glory Blend</h3>
+            <p>Our signature medium roast — $16.99</p>
+            <a href="cart.html" class="btn btn-secondary btn-sm">Add to Cart</a>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" alt="French Press">
+          <div class="feature-card-body">
+            <h3>Classic French Press</h3>
+            <p>Rich immersion brewing — $34.99</p>
+            <a href="cart.html" class="btn btn-secondary btn-sm">Add to Cart</a>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Burr Grinder">
+          <div class="feature-card-body">
+            <h3>Burr Grinder Pro</h3>
+            <p>Consistent grinds every time — $149.99</p>
+            <a href="cart.html" class="btn btn-secondary btn-sm">Add to Cart</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Checkout Modal -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center pb-4">
+          <div class="modal-icon"><i class="fas fa-shopping-bag"></i></div>
+          <p>Online checkout coming soon! Visit us in-store or call <strong>(503) 555-0142</strong> to place your order.</p>
+          <a href="classics.html" class="btn btn-primary">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4><i class="fas fa-seedling"></i> Bean Boutique</h4>
+          <p>Artisan coffee, curated equipment, and a warm community since 2014.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="classics.html">Coffee Selection</a></li>
+            <li><a href="immersion-brewers.html">Brewing Equipment</a></li>
+            <li><a href="events.html">Events &amp; Workshops</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>42 Roastery Lane, Portland, OR 97201</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>hello@beanboutique.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bean Boutique — Artisan coffee blends, brewing equipment, and community events in your neighborhood.">
+  <title>Bean Boutique | Artisan Coffee & Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg bb-navbar sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-seedling"></i> Bean Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navCoffee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coffee</a>
+            <ul class="dropdown-menu" aria-labelledby="navCoffee">
+              <li><a class="dropdown-item" href="classics.html">Classics</a></li>
+              <li><a class="dropdown-item" href="pastries-snacks.html">Pastries &amp; Snacks</a></li>
+              <li><a class="dropdown-item" href="cool-story.html">Cool Story</a></li>
+              <li><a class="dropdown-item" href="best-selections.html">Best Selections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
+            <ul class="dropdown-menu" aria-labelledby="navEquipment">
+              <li><a class="dropdown-item" href="immersion-brewers.html">Immersion Brewers</a></li>
+              <li><a class="dropdown-item" href="electric-machines.html">Electric Machines</a></li>
+              <li><a class="dropdown-item" href="essentials.html">Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link">Offers</a></li>
+        </ul>
+        <form class="nav-search-form" action="search.html" method="get" role="search">
+          <div class="input-group input-group-sm">
+            <input type="search" class="form-control" name="q" placeholder="Search coffees &amp; equipment…" aria-label="Search products" list="global-product-list">
+            <button class="btn btn-primary" type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <datalist id="global-product-list">
+          <option value="Morning Glory Blend"><option value="Ethiopian Yirgacheffe"><option value="Colombian Supremo">
+          <option value="Midnight Ember"><option value="Kenyan AA"><option value="Swiss Water Decaf">
+          <option value="Pro Espresso Machine"><option value="Classic French Press"><option value="Burr Grinder Pro">
+          <option value="Pour-Over Starter Set"><option value="AeroPress Go"><option value="Moka Pot Classic">
+          <option value="Almond Croissant"><option value="Chocolate Brownie"><option value="Origin Story Blend">
+        </datalist>
+        <ul class="navbar-nav navbar-icons align-items-lg-center">
+          <li class="nav-item"><a href="cart.html" class="nav-link cart-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link profile-link" aria-label="Account"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap Carousel Hero -->
+  <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80" alt="Friends enjoying coffee together in a warm café">
+        <div class="slide-overlay"></div>
+        <div class="carousel-caption">
+          <h1>Where Every Cup Tells a Story</h1>
+          <p>Discover artisan roasts, premium brewing gear, and a community that lives for great coffee.</p>
+          <a href="classics.html" class="btn btn-primary">Explore Our Blends</a>
+          <a href="events.html" class="btn btn-outline ms-2">Join an Event</a>
+          <a href="register.html" class="btn btn-outline ms-2 mt-2 mt-md-0">Get 20% Off</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&q=80" alt="Freshly roasted coffee beans">
+        <div class="slide-overlay"></div>
+        <div class="carousel-caption">
+          <h1>Ethically Sourced, Small-Batch Roasted</h1>
+          <p>Direct-trade beans from Ethiopia, Colombia, and Guatemala — roasted fresh weekly.</p>
+          <a href="classics.html" class="btn btn-primary">Shop Coffee</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=1600&q=80" alt="Pour-over coffee brewing">
+        <div class="slide-overlay"></div>
+        <div class="carousel-caption">
+          <h1>Brew Café-Quality at Home</h1>
+          <p>Premium equipment and expert guidance for every brewing method.</p>
+          <a href="immersion-brewers.html" class="btn btn-primary">Browse Equipment</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Welcome Section -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Welcome</span>
+        <h2>More Than a Coffee Shop</h2>
+        <p>Bean Boutique has been the heart of our neighborhood for over a decade — a place where craft meets community.</p>
+      </div>
+      <div class="info-boxes">
+        <div class="info-box">
+          <i class="fas fa-leaf"></i>
+          <h3>Ethically Sourced</h3>
+          <p>Direct-trade beans from farms in Ethiopia, Colombia, and Guatemala.</p>
+        </div>
+        <div class="info-box">
+          <i class="fas fa-fire"></i>
+          <h3>Small-Batch Roasted</h3>
+          <p>Roasted fresh weekly in-house for peak flavor and aroma.</p>
+        </div>
+        <div class="info-box">
+          <i class="fas fa-users"></i>
+          <h3>Community First</h3>
+          <p>Workshops, tastings, and events that bring coffee lovers together.</p>
+        </div>
+        <div class="info-box">
+          <i class="fas fa-truck"></i>
+          <h3>Delivered Fresh</h3>
+          <p>Subscribe for regular deliveries straight to your door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="bg-cream-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Featured</span>
+        <h2>Seasonal Favourites</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morning Glory blend">
+          <div class="feature-card-body">
+            <h3>Morning Glory Blend</h3>
+            <p>Our signature medium roast with notes of caramel and citrus. Perfect for your daily ritual.</p>
+            <a href="classics.html">View Blend <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=600&q=80" alt="Espresso machine">
+          <div class="feature-card-body">
+            <h3>Pro Espresso Machine</h3>
+            <p>Professional-grade espresso at home. PID temperature control and dual boiler system.</p>
+            <a href="electric-machines.html">Shop Equipment <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80" alt="Coffee tasting event">
+          <div class="feature-card-body">
+            <h3>Cupping Workshop</h3>
+            <p>Learn to taste coffee like a pro. Next session: Saturday, March 15.</p>
+            <a href="events.html">Register Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Feed Widget -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Community</span>
+        <h2>Follow Our Journey</h2>
+        <p>See what's brewing at Bean Boutique on social media.</p>
+      </div>
+      <div class="social-feed">
+        <h3><i class="fab fa-instagram"></i> @beanboutique</h3>
+        <div class="social-grid">
+          <a href="#"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&q=80" alt="Latte art"></a>
+          <a href="#"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Coffee beans"></a>
+          <a href="#"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Cappuccino"></a>
+          <a href="#"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=400&q=80" alt="Café interior"></a>
+          <a href="#"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&q=80" alt="Coffee preparation"></a>
+          <a href="#"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80" alt="Espresso shot"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4><i class="fas fa-seedling"></i> Bean Boutique</h4>
+          <p>Artisan coffee, curated equipment, and a warm community since 2014.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="classics.html">Coffee Selection</a></li>
+            <li><a href="immersion-brewers.html">Brewing Equipment</a></li>
+            <li><a href="events.html">Events &amp; Workshops</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>42 Roastery Lane<br>Portland, OR 97201</p>
+          <p>Mon–Sat: 7am – 7pm<br>Sun: 8am – 5pm</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><i class="fas fa-envelope"></i> hello@beanboutique.com</p>
+          <p><i class="fas fa-phone"></i> (503) 555-0142</p>
+          <div class="security-badge">
+            <i class="fas fa-lock"></i> Secure browsing — your data is protected
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+        <p>Crafted with <i class="fas fa-heart text-accent"></i> and coffee</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CSS :target Welcome Popup (appears after login) -->
+  <div id="welcome-discount" class="welcome-overlay">
+    <a href="#" class="welcome-overlay-backdrop" aria-label="Close welcome popup"></a>
+    <div class="welcome-overlay-card">
+      <a href="#" class="welcome-overlay-close" aria-label="Close">&times;</a>
+      <div class="modal-icon"><i class="fas fa-gift"></i></div>
+      <h2>Welcome to Bean Boutique!</h2>
+      <p>Thank you for joining us. Enjoy <strong>20% off</strong> your first purchase of any item.</p>
+      <div class="discount-code">BEAN20</div>
+      <p class="mb-3">Use this code at checkout. Valid on your first order only.</p>
+      <a href="classics.html" class="btn btn-primary">Start Shopping</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap Cookie Toast -->
+  <div class="toast-container position-fixed bottom-0 start-0 p-3">
+    <div id="cookieToast" class="toast cookie-toast show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-body">
+        <p><i class="fas fa-shield-alt"></i> We use cookies to protect your data and improve your experience. <a href="#">Privacy Policy</a></p>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="toast">Accept</button>
+          <button type="button" class="btn btn-outline btn-sm" data-bs-dismiss="toast">Decline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
