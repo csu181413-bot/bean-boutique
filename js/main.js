@@ -1,9 +1,3 @@
-/**
- * Bean Boutique — Core Application & Interactive UI Plugins
- * Implements Bootstrap 5 plugins, jQuery interactive widgets, cart engine,
- * toast notifications, quick view modals, and responsive behaviors.
- */
-
 (function($) {
   'use strict';
 
@@ -922,6 +916,67 @@
       if (id) {
         window.CartEngine.removeItem(id);
       }
+    });
+
+    // Event Registration Form Handler
+    $(document).on('submit', '#event-registration-form, .registration-section form, form[action^="mailto:"]', function(e) {
+      e.preventDefault();
+      
+      const $form = $(this);
+      const firstName = $form.find('#first-name').val() || '';
+      const lastName = $form.find('#last-name').val() || '';
+      const email = $form.find('#email').val() || '';
+      const $eventSelect = $form.find('#event-select');
+      const eventName = $eventSelect.find('option:selected').text() || $eventSelect.val() || 'Coffee Event';
+      const recipient = $form.attr('action') ? $form.attr('action').replace(/^mailto:/i, '') : 'events@beanboutique.com';
+      
+      const fullName = (firstName + ' ' + lastName).trim() || 'Guest';
+      const subject = `Event Registration: ${eventName}`;
+      const body = `Hello Bean Boutique Team,\n\nI would like to register for the following event:\n- Event: ${eventName}\n- Name: ${fullName}\n- Email: ${email}\n\nThank you!\n${fullName}`;
+      
+      const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      let $feedback = $form.find('.registration-feedback');
+      if ($feedback.length === 0) {
+        $feedback = $('<div class="registration-feedback mt-4 p-4 bg-white border border-success border-2 rounded-4 text-center shadow-sm"></div>');
+        $form.append($feedback);
+      }
+
+      $feedback.html(`
+        <div class="text-success mb-2"><i class="fas fa-check-circle fa-3x"></i></div>
+        <h3 class="h4 fw-bold text-dark mb-2">Registration Request Ready!</h3>
+        <p class="text-muted mb-3">Thank you, <strong>${fullName}</strong>! We have prepared your email registration for <strong>${eventName}</strong>.</p>
+        <div class="p-3 bg-light rounded-3 text-start small text-muted mb-3 font-monospace border">
+          <div><strong>To:</strong> ${recipient}</div>
+          <div><strong>Subject:</strong> ${subject}</div>
+          <div><strong>Registrant:</strong> ${fullName} (${email})</div>
+        </div>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+          <a href="${mailtoUrl}" class="btn btn-primary rounded-pill px-4">
+            <i class="fas fa-paper-plane me-2"></i> Launch Email App
+          </a>
+          <button type="button" class="btn btn-outline-secondary rounded-pill px-4 reset-reg-form">
+            Register Another Person
+          </button>
+        </div>
+      `);
+
+      if (window.announceToScreenReader) {
+        window.announceToScreenReader(`Registration details created for ${fullName} for ${eventName}. Email client launched.`);
+      }
+
+      // Try triggering mailto link automatically
+      try {
+        window.location.href = mailtoUrl;
+      } catch (err) {
+        console.log('Mailto trigger handled:', err);
+      }
+    });
+
+    $(document).on('click', '.reset-reg-form', function() {
+      const $form = $(this).closest('form');
+      $form[0].reset();
+      $form.find('.registration-feedback').remove();
     });
   });
 
