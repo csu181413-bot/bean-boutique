@@ -1658,3 +1658,199 @@ section {
     text-align: center;
   }
 }
+
+/* ============================================
+   Accessibility (a11y) & Search Enhancements
+   ============================================ */
+
+/* ---- Skip Link for Screen Readers ---- */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background: #2c1810;
+  color: #ffffff;
+  padding: 12px 20px;
+  z-index: 9999;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 10px;
+  outline: 3px solid #f39c12;
+}
+
+/* ---- Floating Accessibility Widget Trigger ---- */
+.a11y-widget-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1080;
+}
+
+.btn-a11y-floating {
+  background: var(--coffee-dark);
+  color: #ffffff !important;
+  border: 2px solid var(--accent);
+  border-radius: 50px;
+  padding: 12px 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-a11y-floating:hover,
+.btn-a11y-floating:focus {
+  transform: scale(1.05);
+  background: var(--accent);
+  color: #ffffff !important;
+  outline: 3px solid #ffffff;
+}
+
+.btn-a11y-floating i {
+  font-size: 1.3rem;
+}
+
+/* ---- High Contrast Mode ---- */
+html.a11y-high-contrast {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+
+html.a11y-high-contrast body,
+html.a11y-high-contrast nav,
+html.a11y-high-contrast header,
+html.a11y-high-contrast section,
+html.a11y-high-contrast footer,
+html.a11y-high-contrast div,
+html.a11y-high-contrast article,
+html.a11y-high-contrast .card,
+html.a11y-high-contrast .offcanvas {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+}
+
+html.a11y-high-contrast a,
+html.a11y-high-contrast button,
+html.a11y-high-contrast .nav-link,
+html.a11y-high-contrast h1,
+html.a11y-high-contrast h2,
+html.a11y-high-contrast h3,
+html.a11y-high-contrast h4 {
+  color: #ffffff !important;
+}
+
+html.a11y-high-contrast .btn-primary,
+html.a11y-high-contrast .bg-primary {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
+/* ---- Dark Mode Theme ---- */
+html.a11y-dark-mode body {
+  background-color: #1a1412 !important;
+  color: #f0e8dc !important;
+}
+
+html.a11y-dark-mode nav.bb-navbar,
+html.a11y-dark-mode .card,
+html.a11y-dark-mode .product-card,
+html.a11y-dark-mode .feature-card,
+html.a11y-dark-mode .info-box,
+html.a11y-dark-mode .bg-cream-dark {
+  background-color: #271e1a !important;
+  color: #f0e8dc !important;
+  border-color: #3e3029 !important;
+}
+
+html.a11y-dark-mode h1,
+html.a11y-dark-mode h2,
+html.a11y-dark-mode h3,
+html.a11y-dark-mode h4,
+html.a11y-dark-mode .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* ---- Monochrome Mode ---- */
+html.a11y-monochrome {
+  filter: grayscale(100%);
+}
+
+/* ---- Dyslexic Font Mode ---- */
+body.a11y-dyslexic-font,
+body.a11y-dyslexic-font * {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.8 !important;
+}
+
+/* ---- Reading Ruler ---- */
+.a11y-ruler {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 0, 0.25);
+  border-top: 2px solid #e67e22;
+  border-bottom: 2px solid #e67e22;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translateY(-20px);
+}
+
+/* ---- Large Cursor ---- */
+body.a11y-large-cursor,
+body.a11y-large-cursor * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="%23c87941" stroke="%23ffffff" stroke-width="2"><path d="M3 3l7 18 3-7 7-3L3 3z"/></svg>'), auto !important;
+}
+
+/* ---- Highlight Links ---- */
+body.a11y-highlight-links a {
+  background-color: #fff3cd !important;
+  color: #856404 !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
+  padding: 2px 4px !important;
+  border-radius: 4px !important;
+}
+
+/* ---- Stop Animations ---- */
+body.a11y-stop-animations * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* ---- Keyboard Focus Rings ---- */
+:focus-visible {
+  outline: 3px solid var(--accent) !important;
+  outline-offset: 3px !important;
+}
+
+/* ---- Live Search Autocomplete Box ---- */
+.search-autocomplete-box {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+  border: 1px solid var(--cream-dark) !important;
+}
+
+.hover-bg-cream:hover {
+  background-color: var(--cream-dark) !important;
+}
+
+.extra-small {
+  font-size: 0.75rem;
+}
+
+/* ---- Cart Badge ---- */
+.cart-badge {
+  font-size: 0.7rem;
+  padding: 0.25em 0.6em;
+}
+
