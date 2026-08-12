@@ -1,9 +1,15 @@
+/**
+ * Bean Boutique — Accessibility (a11y) Suite
+ * Features for users with visual, hearing, motor, or cognitive impairments.
+ */
+
 (function($) {
   'use strict';
 
+  // State object stored in localStorage for persistent user preferences
   const defaultState = {
-    contrast: 'default', 
-    fontSize: 100,      
+    contrast: 'default', // 'default', 'high-contrast', 'dark', 'monochrome'
+    fontSize: 100,      // percentage: 100, 110, 120, 130, 140
     dyslexicFont: false,
     readingRuler: false,
     largeCursor: false,
@@ -144,13 +150,13 @@
       `);
     }
 
-    
+    // 2. Ensure main content wrapper has id="main-content"
     if ($('#main-content').length === 0) {
       const $mainElem = $('main').length ? $('main') : $('section').first();
       $mainElem.attr('id', 'main-content').attr('tabindex', '-1');
     }
 
-    
+    // 3. Floating Trigger Button
     if ($('#a11y-floating-trigger').length === 0) {
       $('body').append(`
         <div id="a11y-widget-container" class="a11y-widget-container">
@@ -168,7 +174,7 @@
       `);
     }
 
-   
+    // 4. Offcanvas Drawer
     if ($('#a11yOffcanvas').length === 0) {
       $('body').append(`
         <div class="offcanvas offcanvas-end a11y-offcanvas" tabindex="-1" id="a11yOffcanvas" aria-labelledby="a11yOffcanvasLabel">

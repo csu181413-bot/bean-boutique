@@ -18,9 +18,9 @@
     { id: 'decaf', title: 'Swiss Water Decaf', category: 'coffee', page: 'classics.html', price: '$17.49', img: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80', desc: 'Chemical-free decaffeinated coffee with rich brown sugar notes.' },
     { id: 'origin-story', title: 'Origin Story Blend', category: 'coffee', page: 'cool-story.html', price: '$22.99', img: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80', desc: 'Artisan blend telling the heritage of small-batch coffee farming.' },
 
-    // Food & Pastries
-    { id: 'croissant', title: 'Almond Croissant', category: 'food', page: 'pastries-snacks.html', price: '$4.50', img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80', desc: 'Flaky buttery pastry filled with sweet almond frangipane paste.' },
-    { id: 'brownie', title: 'Chocolate Fudge Brownie', category: 'food', page: 'pastries-snacks.html', price: '$3.99', img: 'https://images.unsplash.com/photo-1607920591413-3cdc6aee3a1f?w=600&q=80', desc: 'Rich Belgian dark chocolate brownie topped with espresso sea salt.' },
+    // Bean Samplers & Taster Sets
+    { id: 'african-sampler', title: 'African Origin Bean Sampler', category: 'coffee', page: 'bean-samplers.html', price: '$24.99', img: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80', desc: 'Features Ethiopian, Kenyan, and Rwandan whole coffee beans.' },
+    { id: 'roaster-flight', title: "Roaster's Choice Bean Flight", category: 'coffee', page: 'bean-samplers.html', price: '$28.50', img: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80', desc: 'Curated rotation of 4 micro-lot whole bean coffee roasts.' },
 
     // Equipment
     { id: 'espresso-machine', title: 'Pro Espresso Machine', category: 'equipment', page: 'electric-machines.html', price: '$899.00', img: 'https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=600&q=80', desc: 'Professional espresso maker with dual boiler and PID temp control.' },
@@ -33,8 +33,8 @@
 
   // Direct Page Topic Routing Map
   const topicRoutes = [
-    { keywords: ['classics', 'classic', 'roast', 'blend', 'coffee'], page: 'classics.html', title: 'Classics Coffee' },
-    { keywords: ['pastry', 'pastries', 'snack', 'croissant', 'brownie', 'food', 'bakery'], page: 'pastries-snacks.html', title: 'Pastries & Snacks' },
+    { keywords: ['classics', 'classic', 'roast', 'blend', 'coffee', 'bean', 'beans'], page: 'classics.html', title: 'Classics Coffee Beans' },
+    { keywords: ['sampler', 'samplers', 'taster', 'flight', 'pack', 'tasting'], page: 'bean-samplers.html', title: 'Bean Samplers & Tasters' },
     { keywords: ['cool', 'story', 'heritage', 'origin', 'farm'], page: 'cool-story.html', title: 'Cool Story Blends' },
     { keywords: ['best', 'selection', 'selections', 'reserve', 'yirgacheffe', 'kenyan'], page: 'best-selections.html', title: 'Best Selections' },
     { keywords: ['immersion', 'french press', 'aeropress', 'moka', 'brewer', 'brewers'], page: 'immersion-brewers.html', title: 'Immersion Brewers' },

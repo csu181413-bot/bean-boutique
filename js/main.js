@@ -1,3 +1,9 @@
+/**
+ * Bean Boutique — Core Application & Interactive UI Plugins
+ * Implements Bootstrap 5 plugins, jQuery interactive widgets, cart engine,
+ * toast notifications, quick view modals, and responsive behaviors.
+ */
+
 (function($) {
   'use strict';
 

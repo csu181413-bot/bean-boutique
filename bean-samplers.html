@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore curated coffee bean samplers and tasting flights at Bean Boutique — fresh artisan roasts from top origins.">
+  <title>Bean Samplers &amp; Tasters | Bean Boutique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg bb-navbar sticky-top">
+    <div class="container" id="mainNav">
+      <a href="index.html" class="navbar-brand"><i class="fas fa-seedling"></i> Bean Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navCoffee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coffee Beans</a>
+            <ul class="dropdown-menu" aria-labelledby="navCoffee">
+              <li><a class="dropdown-item" href="classics.html">Classics</a></li>
+              <li><a class="dropdown-item active" href="bean-samplers.html">Bean Samplers</a></li>
+              <li><a class="dropdown-item" href="cool-story.html">Cool Story</a></li>
+              <li><a class="dropdown-item" href="best-selections.html">Best Selections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navEquipment" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipment</a>
+            <ul class="dropdown-menu" aria-labelledby="navEquipment">
+              <li><a class="dropdown-item" href="immersion-brewers.html">Immersion Brewers</a></li>
+              <li><a class="dropdown-item" href="electric-machines.html">Electric Machines</a></li>
+              <li><a class="dropdown-item" href="essentials.html">Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link">Offers</a></li>
+        </ul>
+        <form class="nav-search-form" action="search.html" method="get" role="search">
+          <div class="input-group input-group-sm">
+            <input type="search" class="form-control" name="q" placeholder="Search coffee beans &amp; gear…" aria-label="Search products" list="global-product-list">
+            <button class="btn btn-primary" type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <datalist id="global-product-list">
+          <option value="African Origin Bean Sampler">
+          <option value="Roaster's Choice Bean Flight">
+          <option value="Dark Roast Bean Collection">
+          <option value="Decaf & Low-Caffeine Bean Pack">
+        </datalist>
+        <ul class="navbar-nav navbar-icons align-items-lg-center">
+          <li class="nav-item"><a href="cart.html" class="nav-link cart-link" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link profile-link" aria-label="Account"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="section-label">Coffee Beans</span>
+      <h1>Bean Samplers &amp; Taster Flights</h1>
+      <p>Discover distinct flavor profiles, processing styles, and coffee bean origins with our curated taster packs.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="catalog-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="African Origin Bean Sampler">
+            <span class="product-badge">Top Taster</span>
+          </div>
+          <div class="product-body">
+            <h3>African Origin Bean Sampler</h3>
+            <div class="product-meta"><span class="tag">Sampler Flight</span><span class="tag">3x 100g Bags</span></div>
+            <p>Features Ethiopian Yirgacheffe, Kenyan AA, and Rwandan Red Bourbon whole beans for fruity, floral exploration.</p>
+            <div class="tasting-notes"><strong>Notes:</strong> Jasmine, wild berry, citrus zest</div>
+            <div class="product-footer"><span class="price">$24.99</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Roaster's Choice Bean Flight">
+          </div>
+          <div class="product-body">
+            <h3>Roaster's Choice Bean Flight</h3>
+            <div class="product-meta"><span class="tag">Micro-Lot</span><span class="tag">4x 100g Bags</span></div>
+            <p>Our head roaster's monthly rotation of rare single-origin micro-lot coffee beans roasted to order.</p>
+            <div class="tasting-notes"><strong>Notes:</strong> Brown sugar, stone fruit, cocoa nibs</div>
+            <div class="product-footer"><span class="price">$28.50</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Dark Roast Bean Trio">
+          </div>
+          <div class="product-body">
+            <h3>Dark Roast Bean Trio</h3>
+            <div class="product-meta"><span class="tag">Dark Roast</span><span class="tag">3x 150g Bags</span></div>
+            <p>Deep, smoky, and chocolatey coffee bean roasts crafted specifically for espresso and moka pot brewing.</p>
+            <div class="tasting-notes"><strong>Notes:</strong> Dark cocoa, toasted walnut, molasses</div>
+            <div class="product-footer"><span class="price">$22.00</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Decaf & Low-Caffeine Pack">
+          </div>
+          <div class="product-body">
+            <h3>Decaf &amp; Low-Caffeine Pack</h3>
+            <div class="product-meta"><span class="tag">Decaf</span><span class="tag">2x 200g Bags</span></div>
+            <p>Chemical-free Swiss Water Processed beans delivering rich sweetness and full flavor without the caffeine boost.</p>
+            <div class="tasting-notes"><strong>Notes:</strong> Toasted almond, red apple, caramel</div>
+            <div class="product-footer"><span class="price">$21.50</span><a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><p>&copy; 2026 Bean Boutique. All rights reserved. Artisan Specialty Coffee Beans.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
